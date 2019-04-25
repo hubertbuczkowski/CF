@@ -10,6 +10,7 @@
 
 .picture {
   margin: 10px;
+  width: 100px;
   height: calc(100% - 20px);
   background-image: url("https://www.currencyfair.com/cf-content/themes/cfwp-2018/svg/currencyfair-logo-pos.svg?x30389");
   background-repeat: no-repeat;
@@ -19,7 +20,7 @@
 }
 
 .picture:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 600px) {

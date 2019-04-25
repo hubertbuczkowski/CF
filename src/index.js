@@ -1,10 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./Header/header";
+import Body from "./Body/body";
 
 class App extends React.Component {
   render() {
-    return <Header />;
+    return (
+      <div>
+        <Header />
+        <Body />
+      </div>
+    );
   }
 }
 
