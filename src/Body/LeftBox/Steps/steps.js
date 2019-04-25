@@ -13,7 +13,7 @@ class LeftBox extends React.Component {
   render() {
     return (
       <div>
-        <Labels steps={steps} />
+        <Labels steps={steps} done={done}/>
         <ProgressBar percent={(done / steps.length) * 100} />
       </div>
     );

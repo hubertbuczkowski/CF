@@ -1,18 +1,21 @@
+@value colors: "../Assets/colors.css";
+@value headerDark, mainMarginLeft from colors;
+
+
 .header {
   width: 100%;
-  height: 50px;
-  background-color: rgb(71, 71, 71);
-  padding: 0 50px 0 50px;
+  height: 70px;
+  background-color: headerDark;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .picture {
-  margin: 10px;
-  width: 100px;
-  height: calc(100% - 20px);
-  background-image: url("https://www.currencyfair.com/cf-content/themes/cfwp-2018/svg/currencyfair-logo-pos.svg?x30389");
+  width: 300px;
+  height: 100%;
+  margin: mainMarginLeft;
+  background-image: url("../Assets/images/CF_logo_RGB_NEG.svg");
   background-repeat: no-repeat;
   background-size: contain;
   transition: transform 0.2s;

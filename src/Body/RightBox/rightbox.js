@@ -2,7 +2,7 @@ import React from "react";
 
 class RightBox extends React.Component {
   render() {
-    return "rightbox";
+    return <div className={this.props.className}>rightbox</div>;
   }
 }
 

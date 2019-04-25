@@ -1,10 +1,14 @@
+@value colors: "../../../Assets/colors.css";
+@value blueLight, blueLighter from colors;
+
+
 .outer {
   height: 5px;
-  background-color: black;
+  background-color: blueLighter;
   border-radius: 35px;
 }
 .inner {
   border-radius: 35px 0 0 35px;
-  background-color: green;
+  background-color: blueLight;
   height: 100%;
 }

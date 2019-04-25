@@ -3,7 +3,7 @@ import Steps from "./Steps/steps";
 
 class LeftBox extends React.Component {
   render() {
-    return <Steps />;
+    return <div className={this.props.className}><Steps /></div>;
   }
 }
 

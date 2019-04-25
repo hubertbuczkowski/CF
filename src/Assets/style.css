@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'PostGrotesk';
+    font-style: normal;
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Bold.eot');
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Bold.woff2') format('woff2'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Bold.woff') format('woff'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Bold.ttf') format('truetype'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Bold.svg') format('svg'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-Bold.otf') format('otf'),
+ }
+ @font-face {
+    font-family: 'PostGrotesk';
+    font-style: normal;
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BoldItalic.eot');
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BoldItalic.woff2') format('woff2'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BoldItalic.woff') format('woff'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BoldItalic.ttf') format('truetype'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BoldItalic.svg') format('svg'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-BoldItalic.otf') format('otf'),
+ }
+ @font-face {
+    font-family: 'PostGrotesk';
+    font-style: normal;
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Book.eot');
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Book.woff2') format('woff2'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Book.woff') format('woff'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Book.ttf') format('truetype'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Book.svg') format('svg'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-Book.otf') format('otf'),
+ }
+ @font-face {
+    font-family: 'PostGrotesk';
+    font-style: normal;
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BookItalic.eot');
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BookItalic.woff2') format('woff2'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BookItalic.woff') format('woff'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BookItalic.ttf') format('truetype'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BookItalic.svg') format('svg'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-BookItalic.otf') format('otf'),
+ }
+ @font-face {
+    font-family: 'PostGrotesk';
+    font-style: normal;
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Light.eot');
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Light.woff2') format('woff2'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Light.woff') format('woff'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Light.ttf') format('truetype'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Light.svg') format('svg'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-Light.otf') format('otf'),
+ }
+ @font-face {
+    font-family: 'PostGrotesk';
+    font-style: normal;
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-LightItalic.eot');
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-LightItalic.woff2') format('woff2'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-LightItalic.woff') format('woff'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-LightItalic.ttf') format('truetype'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-LightItalic.svg') format('svg'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-LightItalic.otf') format('otf'),
+ }
+ @font-face {
+    font-family: 'PostGrotesk';
+    font-style: normal;
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Medium.eot');
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Medium.woff2') format('woff2'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Medium.woff') format('woff'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Medium.ttf') format('truetype'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Medium.svg') format('svg'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-Medium.otf') format('otf'),
+ }
+ @font-face {
+    font-family: 'PostGrotesk';
+    font-style: normal;
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-MediumItalic.eot');
+    src: url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-MediumItalic.woff2') format('woff2'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-MediumItalic.woff') format('woff'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-MediumItalic.ttf') format('truetype'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-MediumItalic.svg') format('svg'),
+        url('./fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-MediumItalic.otf') format('otf'),
+ }
+
+body{
+    margin: 0px;
+    font-family: 'PostGrotesk', sans-serif;
+}

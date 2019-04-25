@@ -1,14 +1,14 @@
 import React from "react";
 import SingleLabel from "./singleLabel";
-import "./labels.module.css";
+import style from "./labels.module.css";
 
-function createLabels(labels) {
+function createLabels(labels, done) {
   let acc = [];
   let width = (1 / labels.length) * 100;
 
   for (let i = 0; i < labels.length; i++) {
     acc.push(
-      <SingleLabel step={i + 1} label={labels[i]} width={width + "%"} />
+      <SingleLabel done={done>i} step={i + 1} label={labels[i]} width={width + "%"} />
     );
   }
   return acc;
@@ -19,7 +19,7 @@ class Label extends React.Component {
     super(props);
   }
   render() {
-    return <div className="container">{createLabels(this.props.steps)}</div>;
+    return <div className={style.container}>{createLabels(this.props.steps, this.props.done)}</div>;
   }
 }
 

@@ -1,12 +1,5 @@
 import React from "react";
-import "./styles.module.css";
-
-function isMobileDevice() {
-  return (
-    typeof window.orientation !== "undefined" ||
-    navigator.userAgent.indexOf("IEMobile") !== -1
-  );
-}
+import style from "./styles.module.css";
 
 class Header extends React.Component {
   constructor(props) {
@@ -14,8 +7,8 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <div className={"header"}>
-        <div className={"picture"} />
+      <div className={style.header}>
+        <div className={style.picture} />
       </div>
     );
   }
