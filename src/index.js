@@ -1,13 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import Header from "./Header/header";
 
 class App extends React.Component {
-    render()
-    {
-        return "Hello CurrencyFair. I am tarting from this point"
-    }
+  render() {
+    return <Header />;
+  }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+ReactDOM.render(<App />, document.getElementById("root"));
