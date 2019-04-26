@@ -1,0 +1,14 @@
+@value colors: "../../../Assets/colors.css";
+@value smallFont, fontGray, topMarginValue from colors;
+
+.main{
+}
+
+.main > h4 {
+    margin-bottom: 15px;
+    margin-top: topMarginValue;
+}
+.desc{
+    font-size: 13px;
+    color: fontGray;
+}

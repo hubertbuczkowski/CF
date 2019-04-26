@@ -1,0 +1,27 @@
+@value colors: "../../../Assets/colors.css";
+@value borderLine, topMarginValue, fontCopy, blueLight, blueDark from colors;
+
+.main{
+    margin-top: topMarginValue;
+    border-top: 1px solid borderLine;
+    display: flex;
+    align-items: stretch;
+    padding-top: 8px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.copyright{
+    flex-grow: 1;
+    color: fontCopy;
+}
+
+.other{
+    color: blueLight;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.other:hover{
+    color: blueDark;
+}

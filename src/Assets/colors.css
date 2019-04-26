@@ -1,14 +1,28 @@
 @value headerDark: #32323C;
 @value blueLight: #6EC0E6;
 @value blueLighter: #E2F2FA;
+@value blueDark: #5B9FBF;
 
+@value colorBackgroundBlue: #FAFDFE;
 @value colorBackground: #FBFBFB;
 @value borderLine: #E0E0E0;
 
+
 @value fontDark: #B0BEC5;
+@value fontDarkest: #616161;
+@value fontGray: #878787;
+@value fontCopy: #BEBEBE;
+@value smallFont: 12px;
 
 @value mainMargin: 0 15% 0 15%;
 @value mainMarginLeft: 0 0 0 15%;
 @value mainMarginRight: 0 15% 0 0;
+
+@value middleMarginValue: 5%;
+@value topMarginValue: 55px;
+@value spacerTop: 40px;
+
+
+
 
 @value rest: 70%

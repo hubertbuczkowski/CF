@@ -1,0 +1,6 @@
+@value colors: "../../../../Assets/colors.css";
+@value spacerTop from colors;
+
+.main{
+    margin-top: spacerTop;
+}

@@ -1,10 +1,10 @@
 @value colors: "../Assets/colors.css";
-@value rest, colorBackground, mainMarginLeft, mainMarginRight, borderLine from colors;
+@value rest, colorBackground, mainMarginLeft, mainMarginRight, borderLine, middleMarginValue, topMarginValue from colors;
 
 
 .main{
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 70px);
     align-items: stretch;
     width: 100%;
 }
@@ -12,17 +12,21 @@
 .left{
     justify-content: center;
     align-items: center;
-    flex: 1 2 100%;
+    flex: 1 3 100%;
     flex-basis: 100%;
     padding: mainMarginLeft;
+    padding-right: middleMarginValue;
+    padding-top: topMarginValue;
 }
 
 .right{
     justify-content: center;
     align-items: center;
-    flex: 1 3 100%;
+    flex: 1 4 100%;
     flex-basis: 100%;
     background-color: colorBackground;
     padding: mainMarginRight;
     border-left: 1px solid borderLine;
+    padding-left: middleMarginValue;
+    padding-top: topMarginValue;
 }

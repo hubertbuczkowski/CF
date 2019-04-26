@@ -1,0 +1,24 @@
+@value colors: "../../../Assets/colors.css";
+@value spacerTop, blueLight, blueDark from colors;
+
+.main{
+    margin-top: spacerTop;
+}
+
+
+.button {
+    background-color: blueLight; /* Green */
+    border: 1px solid blueDark;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+  }
