@@ -1,0 +1,56 @@
+@value colors: "../../../../../Assets/colors.css";
+@value borderLine, fontCopy, blueLight, blueDark from colors;
+
+.main{
+    display: flex;
+    align-items: stretch;
+    color: fontCopy;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 10px;
+}
+
+
+
+.main>div{
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    flex: 1 1 0;
+}
+
+.left{
+}
+
+.right{
+    text-align: right;
+}
+
+.right.last{
+    color: black;
+}
+
+.left.title
+{
+    color: black;
+    font-size: 16px;
+
+}
+.right.title
+{
+    display: flex;
+    justify-content: flex-end;
+    color: blueLight;
+    font-size: 12px;
+}
+
+.right.title:hover{
+    color: blueDark;
+}
+
+.left.total
+{
+    display: flex;
+    color: orange;
+
+}

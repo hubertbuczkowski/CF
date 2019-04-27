@@ -1,6 +1,6 @@
 import React from "react";
-import Left from "./LeftBox/leftbox";
-import Right from "./RightBox/rightbox";
+import Left from "./LeftBox/leftBox";
+import Right from "./RightBox/rightBox";
 import style from "./body.module.css"
 
 class Body extends React.Component {

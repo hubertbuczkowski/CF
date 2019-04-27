@@ -1,0 +1,15 @@
+@value colors: "../../../../Assets/colors.css";
+@value colorBackground, borderLine from colors;
+
+.main{
+    background-color: white;
+    padding: 10px;
+}
+
+.title{
+    background-color: colorBackground;
+    border-radius: 5px;
+}
+
+.total{
+}

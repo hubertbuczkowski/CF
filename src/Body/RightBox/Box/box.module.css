@@ -1,0 +1,12 @@
+@value colors: "../../../Assets/colors.css";
+@value borderLine from colors;
+
+.main{
+    border: 1px solid borderLine;
+    border-radius: 5px;
+}
+
+.spacer{
+    border-bottom: 1px solid borderLine;
+
+}
