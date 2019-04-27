@@ -6,9 +6,6 @@ let steps = ["Transaction info", "Recipient info", "Make payment"];
 let done = 1;
 
 class LeftBox extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

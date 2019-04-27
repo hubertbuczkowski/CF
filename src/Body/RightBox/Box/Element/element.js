@@ -7,7 +7,6 @@ class Element extends React.Component {
 
     returnElements(arr){
         let retVal = [];
-        console.log(arr)
         arr.forEach(element => {
             retVal.push(<ElementValue title={element.title} value={element.value} type={this.props.type} last={element.last}/>)
         });

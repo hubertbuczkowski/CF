@@ -7,7 +7,7 @@ class Body extends React.Component {
   render() {
     return (
       <div className={style.main}>
-        <Left className={style.left}/>
+        <Left changeDialog={this.props.changeDialog} className={style.left}/>
         <Right className={style.right}/>
       </div>
     );

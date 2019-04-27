@@ -9,7 +9,7 @@ class LeftBox extends React.Component {
     return (<div className={this.props.className}>
       <Steps />
       <Transation />
-      <Button text="Next"/>
+      <Button onClick={this.props.changeDialog} text="Next"/>
       <Footer />
     </div>
     );

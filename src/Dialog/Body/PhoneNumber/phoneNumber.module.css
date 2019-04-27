@@ -1,0 +1,39 @@
+@value colors: "../../../Assets/colors.css";
+@value borderLine, fontGray from colors;
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number{
+    display: flex;
+    margin-left: 10px;
+}
+
+.number>div{
+    padding: 10px;
+    color: fontGray;
+    letter-spacing: 1px;
+}
+
+.prefix{
+    background-color: #F2F1F1;
+    border: 1px solid borderLine;
+    border-right: 0px;
+    border-radius: 5px 0 0 5px;
+}
+
+.mainNumber{
+    background-color: #F7F7F7;
+    border: 1px solid borderLine;
+    border-radius: 0 5px 5px 0;
+}
+
+.outer > div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

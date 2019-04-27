@@ -1,0 +1,18 @@
+@value colors: "../../Assets/colors.css";
+@value colorBackground, borderLine from colors;
+
+.main{
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-bottom: 1px solid borderLine;
+    background-color: colorBackground;
+    justify-content: center;
+    align-items: center;
+}
+
+.main > div  {
+    margin: 15px;
+}

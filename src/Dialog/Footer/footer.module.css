@@ -1,0 +1,41 @@
+@value colors: "../../Assets/colors.css";
+@value borderLine, topMarginValue, fontCopy, blueLight, blueDark from colors;
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.buttons{
+    display: flex;
+}
+
+.buttons > div > div{
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.buttons > div{
+    display: flex;
+    margin: 0;
+}
+
+.access{
+    font-size: 10px;
+    font-weight: bold;
+    color: blueLight;
+    cursor: pointer;
+}
+
+
+.access:hover{
+    color: blueDark;
+}
+
+.spacer{
+    width: 20px
+}

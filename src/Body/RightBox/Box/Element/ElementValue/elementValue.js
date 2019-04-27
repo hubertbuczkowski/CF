@@ -1,8 +1,5 @@
 import React from "react";
 import style from "./elementValue.module.css"
-import { isTSAnyKeyword } from "@babel/types";
-
-
 
 class ElementValue extends React.Component {
     state= {mainClass : null, secondDiv: null}

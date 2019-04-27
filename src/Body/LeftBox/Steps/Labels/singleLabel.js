@@ -2,9 +2,6 @@ import React from "react";
 import style from "./singleLabel.module.css";
 
 class SingleLabel extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
 
     let color = style.singleLabelInner;

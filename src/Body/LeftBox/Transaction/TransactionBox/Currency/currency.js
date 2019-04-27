@@ -8,7 +8,7 @@ class Currency extends React.Component {
         return (
             <div className={`${style.main} ${this.props.selected}`}>
                 <div className={style.left}>
-                    <img src={this.props.flag}/>
+                    <img alt={this.props.currency} src={this.props.flag}/>
                 </div>
                 <div className={style.right}>
                     {this.props.currency}

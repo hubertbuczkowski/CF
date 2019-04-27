@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./box.module.css"
 import Element from "./Element/element"
-import { declareTypeAlias } from "@babel/types";
 
 var pass = {
     senderTitle: [{title:"Sending Details", value: null}],
@@ -15,15 +14,15 @@ class Box extends React.Component {
   render() {
     return (
       <div className={style.main}>
-        <Element row="1" pass={pass.senderTitle} type="title"/>
+        <Element  pass={pass.senderTitle} type="title"/>
         <div className={style.spacer}/>
-        <Element row="2" pass={pass.sender}/>
+        <Element  pass={pass.sender}/>
         <div className={style.spacer}/>
-        <Element row="3" pass={pass.receiverTitle} type="title"/>
+        <Element  pass={pass.receiverTitle} type="title"/>
         <div className={style.spacer}/>
-        <Element row="4" pass={pass.receiver}/>
+        <Element  pass={pass.receiver}/>
         <div className={style.spacer}/>
-        <Element row="5" pass={pass.footer} type="total"/>
+        <Element  pass={pass.footer} type="total"/>
       </div>
     );
   }

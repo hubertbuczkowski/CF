@@ -15,9 +15,6 @@ function createLabels(labels, done) {
 }
 
 class Label extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return <div className={style.container}>{createLabels(this.props.steps, this.props.done)}</div>;
   }

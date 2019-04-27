@@ -1,0 +1,42 @@
+@value colors: "../../Assets/colors.css";
+@value borderLine, fontGray from colors;
+
+.main{
+    display: flex;
+    flex-flow: column;
+    padding: 25px;
+    border-bottom: 1px solid borderLine;
+}
+
+.main>div{
+    padding: 10px;
+}
+
+.top{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+
+.lock{
+    height: 35px;
+    width: 35px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #798B97;
+    padding-left: 15px;
+}
+
+.bottom{
+    color: fontGray;
+    margin-right: 20%;
+    line-height: 1.5em;
+}
+
+.lockImg{
+    fill: borderLine;
+}
