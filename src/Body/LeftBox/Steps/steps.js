@@ -2,16 +2,15 @@ import React from "react";
 import ProgressBar from "./progressbar";
 import Labels from "./Labels/labels";
 
-let steps = ["Transaction info", "Recipient info", "Make payment"];
-let done = 1;
+
 
 class LeftBox extends React.Component {
 
   render() {
     return (
       <div>
-        <Labels steps={steps} done={done}/>
-        <ProgressBar percent={(done / steps.length) * 100} />
+        <Labels steps={this.props.steps} done={this.props.done}/>
+        <ProgressBar percent={(this.props.done / this.props.steps.length) * 100} />
       </div>
     );
   }

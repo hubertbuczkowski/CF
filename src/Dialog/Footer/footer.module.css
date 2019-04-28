@@ -17,6 +17,7 @@
     padding: 10px 15px;
     font-size: 12px;
     font-weight: bold;
+    display: flex;
 }
 
 .buttons > div{
@@ -29,6 +30,7 @@
     font-weight: bold;
     color: blueLight;
     cursor: pointer;
+    text-align: right;
 }
 
 
@@ -39,3 +41,14 @@
 .spacer{
     width: 20px
 }
+
+@media only screen and (max-width: 1000px) {
+    .buttons > div > div{
+        padding: 8px 13px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .spacer{
+        width: 10px
+    }
+  }

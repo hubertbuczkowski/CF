@@ -18,9 +18,16 @@
     cursor: pointer;
 }
 
+.inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .locked{
     background-color: #DDF0F9; 
     border: 1px solid #D9EBF3;
+    cursor: no-drop;
 }
 
 .secondary{

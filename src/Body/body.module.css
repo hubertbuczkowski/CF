@@ -33,7 +33,6 @@
 
 @media only screen and (max-width: 700px) {
     .main{
-        display: flex;
         flex-flow: column;
     }
     
@@ -43,17 +42,18 @@
         padding: middleMarginValue;
         padding-right: middleMarginValue;
         padding-top: middleMarginValue;
+        order: 2;
     }
     
     .right{
+        order: 1;
         justify-content: center;
         align-items: center;
-        flex: 1 4 100%;
-        flex-basis: 100%;
         background-color: colorBackground;
         padding:  middleMarginValue;
-        border-left: 1px solid borderLine;
+        border-left: 0px;
         padding-top: topMarginValue;
+        border-bottom: 1px solid borderLine;
     }
 }
 
@@ -64,7 +64,6 @@
     
     .right{
         padding:  middleMarginValue;
-        border-left: 0;
     }
 }
   

@@ -1,5 +1,5 @@
 @value colors: "../colors.css";
-@value blueLight from colors;
+@value blueLight, blueLighter from colors;
 
 .main{
     position: fixed;

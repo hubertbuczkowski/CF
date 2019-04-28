@@ -4,12 +4,14 @@ import PhoneNumber from "./PhoneNumber/phoneNumber"
 import InputCode from "./InputCode/inputCode";
 import Footer from "./Footer/footer";
 
+
+
 class Body extends React.Component {
   render() {
     return (
       <div className={style.main}>
-        <PhoneNumber prefix="+353" number="872251177">
-          <InputCode />
+        <PhoneNumber data={this.props.data}>
+          <InputCode ifFull={this.props.ifFull}/>
           <Footer />
         </PhoneNumber>
       </div>

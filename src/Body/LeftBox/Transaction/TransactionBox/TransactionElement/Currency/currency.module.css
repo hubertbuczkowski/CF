@@ -1,4 +1,4 @@
-@value colors: "../../../../../Assets/colors.css";
+@value colors: "../../../../../../Assets/colors.css";
 @value  borderLine, colorBackground, fontDarkest, blueLight, blueLighter from colors;
 
 .main{
