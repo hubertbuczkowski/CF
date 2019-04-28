@@ -6,7 +6,7 @@ class Currency extends React.Component {
    
     render() {
         return (
-            <div className={`${style.main} ${this.props.selected}`}>
+            <div className={`${style.main} ${style[this.props.selected]}`}>
                 <div className={style.left}>
                     <img alt={this.props.currency} src={this.props.flag}/>
                 </div>

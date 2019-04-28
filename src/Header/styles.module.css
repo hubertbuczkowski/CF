@@ -1,5 +1,5 @@
 @value colors: "../Assets/colors.css";
-@value headerDark, mainMarginLeft from colors;
+@value headerDark, mainMarginLeft, middleMarginValue from colors;
 
 
 .header {
@@ -26,9 +26,14 @@
   transform: scale(1.05);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .header {
-    background-color: lightblue;
     padding: 0;
   }
+
+  .picture {
+    margin-left: middleMarginValue;
+    cursor: pointer;
+  }
+
 }

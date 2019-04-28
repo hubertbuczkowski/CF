@@ -4,7 +4,7 @@
 
 .main{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
     border: 1px solid borderLine; 
@@ -19,22 +19,18 @@
 }
 
 .main > div{
-    flex-grow: 1;
-    flex-basis: 100%;
     height: 100%;
 }
 
 .left{
-    flex: 1 1 100%;
     margin-left: 5%;
 }
 
 .right{
+    margin-right: 5%;
     display: flex;
-    flex: 1 3 100%;
     justify-content: center;
     align-items: center;
-
 }
 
 .top{

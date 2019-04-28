@@ -30,3 +30,42 @@
     padding-left: middleMarginValue;
     padding-top: topMarginValue;
 }
+
+@media only screen and (max-width: 700px) {
+    .main{
+        display: flex;
+        flex-flow: column;
+    }
+    
+    .left{
+        justify-content: center;
+        align-items: center;
+        padding: middleMarginValue;
+        padding-right: middleMarginValue;
+        padding-top: middleMarginValue;
+    }
+    
+    .right{
+        justify-content: center;
+        align-items: center;
+        flex: 1 4 100%;
+        flex-basis: 100%;
+        background-color: colorBackground;
+        padding:  middleMarginValue;
+        border-left: 1px solid borderLine;
+        padding-top: topMarginValue;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .left{
+        padding: middleMarginValue;
+    }
+    
+    .right{
+        padding:  middleMarginValue;
+        border-left: 0;
+    }
+}
+  
+  
