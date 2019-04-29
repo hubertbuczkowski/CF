@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./box.module.css"
 import Element from "./Element/element"
-import Question from "../../../Assets/signs/question";
 
 class Box extends React.Component {
   render() {
@@ -19,6 +18,10 @@ class Box extends React.Component {
       </div>
     );
   }
+}
+
+Box.defaultProps = {
+  data: []
 }
 
 export default Box;

@@ -7,7 +7,7 @@ class PhoneNumber extends React.Component {
     return (
       <div className={style.outer}>
         <div className={style.main}>
-          <div>Enter the code sent via SMS to </div>
+          <div>{this.props.message}</div>
           <div className={style.number}>
               <div className={style.prefix}>{this.props.data.prefix}</div>
               <div className={style.mainNumber}>{this.props.data.number}</div>
@@ -19,4 +19,8 @@ class PhoneNumber extends React.Component {
   }
 }
 
+PhoneNumber.defaultProps = {
+  data: {prefix: "000", number: "000000000"},
+  message: "Enter the code sent via SMS to "
+}
 export default PhoneNumber;

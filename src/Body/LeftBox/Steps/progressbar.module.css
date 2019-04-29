@@ -12,3 +12,7 @@
   background-color: blueLight;
   height: 100%;
 }
+
+.inner.full{
+  border-radius: 35px;
+}

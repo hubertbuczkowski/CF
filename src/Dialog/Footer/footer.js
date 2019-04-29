@@ -4,14 +4,17 @@ import Button from "../../Body/LeftBox/Button/button"
 
 class Footer extends React.Component {
 
-  state = {locked: "locked"}
+  cantAcces() {
 
+  }
+
+  //action which are executed when user click on verify button, 
+  //if button is unlocked, application verify code and then shows error or goes to next step
   submit(){
-    if(this.state.locked === "locked")
+    if(this.props.active === "locked")
     {
-      
     } else {
-      this.props.close();
+      this.props.verifyCode()
     }
   }
 
@@ -19,15 +22,22 @@ class Footer extends React.Component {
     return (
       <div className={style.main}>
         <div className={style.buttons}>
-          <Button text="Verify Identity" onClick={() => {}} type={this.props.active}/>
+          <Button text="Verify Identity" onClick={this.submit.bind(this)} type={this.props.active}/>
           <div className={style.spacer}/>
-          <Button text="Back" onClick={this.props.close} type={"Back".toLowerCase()} type="secondary"/>
+          <Button text="Back" onClick={this.props.close} type={"Back".toLowerCase()}/>
           <div className={style.spacer}/>
         </div>
-        <div className={style.access}>I can't access this mobile device</div>
+        <div onClick={this.cantAcces} className={style.access}>{this.props.access}</div>
       </div>
     );
   }
+}
+
+Footer.defaultProps = {
+  access: "I can't access this mobile device",
+  close: () => console.log("Missing close function"),
+  active: '',
+  veifyCode: () => console.log("Missing verify function")
 }
 
 export default Footer;

@@ -5,20 +5,31 @@ import Call from "../../../Assets/signs/phone";
 
 
 class Footer extends React.Component {
+  sendSMS(){
+    //code to send SMS
+  }
+  call(){
+    //code to make a call
+  }
   render() {
     return (
         <div className={style.main}>
-            <div className={style.sms}>
+            <div onClick={this.sendSMS} className={style.sms}>
                 <div className={style.redo}><Redo className={style.redoImg} /></div>
-                Resend a new code
+                {this.props.resend}
             </div>
-            <div className={style.call}>
+            <div onClick={this.call} className={style.call}>
                 <div className={style.redo}><Call className={style.redoImg} /></div>
-                Receive code via call instead
+                {this.props.recall}
             </div>
         </div>
     );
   }
+}
+
+Footer.defaultProps = {
+  resend: "Resend a new code",
+  recall: "Receive code via call instead"
 }
 
 export default Footer;

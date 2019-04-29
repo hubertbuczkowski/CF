@@ -1,9 +1,7 @@
 import React from "react";
 import style from "./currency.module.css"
 
-
 class Currency extends React.Component {
-   
     render() {
         return (
             <div className={`${style.main} ${style[this.props.selected]}`}>
@@ -16,6 +14,12 @@ class Currency extends React.Component {
             </div>
         );
     }
+}
+
+Currency.defaultProps = {
+    selected: '',
+    currency: 'EUR',
+    flag: ""
 }
 
 export default Currency;

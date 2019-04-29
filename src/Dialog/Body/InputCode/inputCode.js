@@ -1,32 +1,25 @@
 import React from "react";
 import style from "./inputCode.module.css";
 
-function validate(){
-
-}
-
 class InputCode extends React.Component {
-  state = { values: [], focus: [1,0,0,0,0,0]
-  }
+  state = { values: [] }
 
-  componentDidMount()
-  {
-
-  }
-
-  unlockButton(){
-    if(this.state.values.join('').length === 6)
+  // unlock button if all digits are entered
+  unlockButton(x){
+    if(x.join('').length === 6)
     {
-      this.props.ifFull(true);
+      this.props.ifFull(true, x);
     }
     else
     {
-      this.props.ifFull(false);
+      this.props.ifFull(false, x);
     }
   }
 
+  //verify if value entered is digit and if value is entered, moves to next input.
+  //if value is the same, focus dont change
   valueChange(x){
-    let values = this.state.values;
+    let values = this.props.values;
     let id = parseInt(x.target.id);
     let value = x.target.value;
     if(!isNaN(value) && value !== " " && value.length < 2)
@@ -40,34 +33,38 @@ class InputCode extends React.Component {
           x.currentTarget.blur();
         }
       }
-      this.setState({values : values})
     }
     else{
       x.target.value = ''
+      values[id] = x.target.value
     }
-    this.unlockButton();
+    this.unlockButton(values)
   }
 
+  //generate input fields
   generateInputs()
   {
     let resp = [];
     for(let i=0; i<6; i++){
-      if(i === 0){
-        resp.push(<input autoFocus={this.state.focus[i]} onChange={(x) => this.valueChange(x)}  ref={i} id={i} value={this.state.values[i]}/>)
-      } else {
-        resp.push(<input autoFocus={this.state.focus[i]} onChange={(x) => this.valueChange(x)}  ref={i} id={i} value={this.state.values[i]}/>)
-      }
+      resp.push(<input autoFocus={i===0} onChange={(x) => this.valueChange(x)}  ref={i} id={i} value={this.props.values[i]} type='tel' />)
     }
     return resp;
   }
 
   render() {
     return (
-      <div className={style.main}>
+      <div className={`${style.main} ${style[this.props.error]}`}>
         {this.generateInputs()}
       </div>
     );
   }
+}
+
+InputCode.defaultProps = {
+  error: '',
+  values: ['','','','','',''],
+  ifFull: () => {console.log("missing ifFUll callback function passed")}
+
 }
 
 export default InputCode;

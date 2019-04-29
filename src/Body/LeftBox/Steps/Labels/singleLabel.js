@@ -2,16 +2,21 @@ import React from "react";
 import style from "./singleLabel.module.css";
 
 class SingleLabel extends React.Component {
-  render() {
-
-    let color = style.singleLabelInner;
+  //return proper style according if sep is done or not
+  styleColor(){
     if(this.props.done)
     {
-      color = style.singleLabelInnerDone;
+      return style.singleLabelInnerDone;
     }
+    else
+    {
+      return style.singleLabelInner
+    }
+  }
+  render() {
     return (
       <div className={style.singleLabel}>
-        <div className={color}>
+        <div className={this.styleColor()}>
           <div>Step {this.props.step}</div>
           <div>{this.props.label}</div>
         </div>
@@ -20,4 +25,9 @@ class SingleLabel extends React.Component {
   }
 }
 
+SingleLabel.defaultProps = {
+  done: 0,
+  step: -1,
+  label: "Missing label value"
+}
 export default SingleLabel;

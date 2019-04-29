@@ -5,6 +5,7 @@ import ElementValue from "./ElementValue/elementValue"
 class Element extends React.Component {
     state= {mainClass : null, elements: []}
 
+    //return elements for each piece of data
     returnElements(arr){
         let retVal = [];
         arr.forEach(element => {
@@ -13,6 +14,7 @@ class Element extends React.Component {
         return retVal;
     }
 
+    //Set all data elements and proper style 
     componentDidMount(){
         if(this.props.type)
         {
@@ -32,6 +34,12 @@ class Element extends React.Component {
             </div>
         );
     }
+}
+
+Element.defaultProps = {
+    pass: [],
+    type: '',
+
 }
 
 export default Element;

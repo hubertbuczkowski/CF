@@ -12,4 +12,9 @@ class RightBox extends React.Component {
   }
 }
 
+RightBox.defaultProps = {
+  data: [],
+  className: ''
+}
+
 export default RightBox;

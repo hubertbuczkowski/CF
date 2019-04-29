@@ -13,4 +13,9 @@ class Button extends React.Component {
   }
 }
 
+Button.defaultProps = {
+  onClick: () => {console.log("missing on click functionality in button")},
+  text: "button"
+}
+
 export default Button;

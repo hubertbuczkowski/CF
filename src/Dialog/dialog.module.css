@@ -19,3 +19,10 @@
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
 }
+
+.error{
+    background-color: #FFBABA;
+    color:#D8000C;
+    border-top: 1px solid #D8000C;
+    border-bottom: 1px solid #D8000C;
+}

@@ -2,10 +2,9 @@ import React from "react";
 import style from "./transactionElement.module.css"
 import Currency from "./Currency/currency"
 
-
-
 class TransactionElement extends React.Component {
    
+   //format money depending on what currency was transfered and display proper formating in transaction box
    moneyFormatter(x){
       return new Intl.NumberFormat('en-US', {
          style: 'currency',
@@ -33,4 +32,7 @@ class TransactionElement extends React.Component {
    }
 }
 
+TransactionElement.defaultProps = {
+   data: {selected: '', label: "missing label", amount: '0', currency: 'EUR', flag: ''}
+}
 export default TransactionElement;

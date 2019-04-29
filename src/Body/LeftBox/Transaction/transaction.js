@@ -2,8 +2,6 @@ import React from "react";
 import TransactionBox from "./TransactionBox/transactionBox"
 import style from "./transaction.module.css"
 
-
-
 class Transaction extends React.Component {
   render() {
     return (
@@ -14,6 +12,10 @@ class Transaction extends React.Component {
       </div>
     );
   }
+}
+
+Transaction.defaultProps = {
+  data: []
 }
 
 export default Transaction;
