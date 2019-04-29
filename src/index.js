@@ -35,7 +35,7 @@ let element = {
   right:  {
     senderTitle: [{title:"Sending Details", value: null}],
     sender: [{title: "You send", value: 2000, last:"last", currency: "EUR"}],
-    receiverTitle: [{title: "Receiving Details", value: `As of right now `}],
+    receiverTitle: [{title: "Receiving Details", value: `As of right now ?`}],
     receiver: [{title:"Rate", value: 0.86022}, {title:"Fee", value: "2.50", currency: "GBP"}, {title:"Delivery date", value: "25th November"}, {title:"Recipient gets", value: 1717.94, last:"last", currency: "GBP"},],
     footer: [{title:"You Save £66.19 compared to your bank!", value: null}]
   }
